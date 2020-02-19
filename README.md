@@ -1,7 +1,7 @@
 # SpringBoot with Docker
 
 
-* To build the docker image
+* To build the docker image without a maven plugin
 
 `docker build -t sgsakthi1992/docker:latest .`
 
@@ -28,3 +28,5 @@
 * To run the docker build via maven - add the plugin
 
 `mvn clean package docker:build`
+
+`docker run --rm -it -p 8080:8080 -p 5005:5005 docker-image:latest`
