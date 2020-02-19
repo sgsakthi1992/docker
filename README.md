@@ -23,3 +23,7 @@
 * To enable remote debugging
 
 `-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005`
+
+* To run the docker build via maven - add the plugin
+
+`mvn clean package docker:build`
