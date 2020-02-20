@@ -7,6 +7,8 @@ import org.springframework.stereotype.Service;
 public class TimeService {
 
     public Time getTime() {
-        return new Time(System.currentTimeMillis());
+        return Time.builder()
+                .setTime(System.currentTimeMillis())
+                .createTime();
     }
 }
