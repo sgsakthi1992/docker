@@ -1,11 +1,10 @@
 package com.sakthi.docker.controller;
 
+import com.sakthi.docker.model.Time;
 import com.sakthi.docker.service.TimeService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.Map;
 
 @RestController
 public class TimeController {
@@ -17,7 +16,7 @@ public class TimeController {
     }
 
     @GetMapping("/time")
-    public ResponseEntity<Map<String, Long>> getTime() {
+    public ResponseEntity<Time> getTime() {
         return ResponseEntity.ok().body(timeService.getTime());
     }
 }

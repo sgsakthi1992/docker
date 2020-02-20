@@ -30,3 +30,17 @@
 `mvn clean package docker:build`
 
 `docker run --rm -it -p 8080:8080 -p 5005:5005 docker-image:latest`
+
+* To run the container using docker-compose.yml
+
+`docker-compose up -d`
+
+**Note:** -d to run in the background
+
+* To check the status of the containers
+
+`docker-compose ps`
+
+* To stop the running container using docker-compose.yml
+
+`docker-compose down`
